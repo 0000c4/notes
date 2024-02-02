@@ -1,8 +1,8 @@
-#client
-cd client
-npm install
-npm start
-#server
-cd server
-npm install
-npm start
+#client: <br>
+  &nbsp; cd client<br>
+  &nbsp;npm install<br>
+ &nbsp; npm start<br>
+#server:<br>
+  &nbsp;cd server<br>
+  &nbsp;npm install<br>
+  &nbsp;npm start<br>
