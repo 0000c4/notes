@@ -1,0 +1,31 @@
+.note{
+    background-color: rgb(238, 243, 249);
+    border-radius: 5px;
+    padding: 10px;
+    height: 120px;
+    overflow: hidden;
+    font-family: 'Roboto';
+}
+/*@media (max-width: 768px) {
+    .note{
+        width: 40%;
+    }
+}*/
+.note__title{
+    font-weight: 400;
+    font-size: 23px;
+    color: rgb(80, 81, 82);
+    overflow: hidden;
+}
+@media (max-width: 678px) {
+    .note__title{
+        font-size: 21px;
+    }
+}
+.note__body{
+    font-weight: 300;
+    font-size: 18px;
+    color: rgb(110,112,115);
+    overflow: hidden;
+    height: 90px;
+}

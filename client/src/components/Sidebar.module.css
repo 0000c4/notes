@@ -1,0 +1,81 @@
+.Modal{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    transition: 500ms;
+    opacity: 0;
+    pointer-events: none;
+    display: flex;
+}
+.ModalContent{
+    padding: 10px 5px;
+    box-sizing: border-box;
+    /*background-color: rgb(238, 243, 249);*/
+    background-color: var(--main-bg-color);/*var location is index.css*/
+    min-width: 250px;
+    transform: translateX(-100%);
+    transition: 400ms all;
+    height: 100%;
+    width: 45%;
+    /*box-shadow: 10px 5px 5px rgb(94, 94, 94);*/
+}
+
+
+.ModalContent.active{
+    transform: translateX(0);
+}
+.Modal.active{
+    opacity: 1;
+    pointer-events: all;
+}
+
+.authBlock{
+    display: flex;
+    justify-content: space-between;
+    gap: 3px;
+    font-family: 'Roboto';
+    color: rgb(109, 109, 109);
+    font-size: 21px;
+    font-weight: 400;
+    
+}
+.authBlock__logout{
+    color: rgb(218, 121, 121);
+    padding: 8px 8px;
+    background-color: var(--main-color);/*var location is index.css*/
+    border-radius: 5px;
+    font-weight: 500;
+}
+.authBlock__text{
+    padding: 8px 8px;
+    background-color: var(--main-color);/*var location is index.css*/
+    border-radius: 5px;
+}
+.authBlock__name{
+    flex-grow: 2;
+    padding: 8px 8px;
+    background-color: var(--main-color);/*var location is index.css*/
+    border-radius: 5px;
+}
+
+.backButton{
+    display: none;
+    height: 35px;
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    z-index: 100;
+}
+
+@media (max-width: 860px) {
+    .ModalContent{
+        width: 100%;
+    }
+    .backButton{
+        display: block;
+    }
+}

@@ -1,0 +1,92 @@
+@import url('reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+main{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.block{
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    min-width: 250px;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.resetForm{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+.block_title {
+    padding-top: 10px;
+    text-align: center;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 35px;
+    color: rgba(0, 0, 0, 0.678);
+}
+.input_password {
+    color: rgb(80, 81, 82);
+    font-size: 18px;
+    max-height: 24px;
+    padding: 5px 5px;
+    background-color: rgb(223, 228, 239);
+    border-radius: 5px;
+    border: 0px;
+}
+
+.input_password:focus {
+    outline: none;
+}
+.block_attention{
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 16px;
+    color: rgb(109, 109, 109);
+}
+
+.block_attention span{
+    font-weight: 400;
+    color: rgb(218, 121, 121);
+}
+button{
+    margin-top: 40px;
+    padding: 8px;
+    background-color: rgb(223, 228, 239);
+    border-radius: 5px;
+    font-family: 'Roboto';
+    color: rgb(109, 109, 109);
+    font-size: 21px;
+    font-weight: 400;
+    text-decoration: none;
+    border: none;
+    align-self:flex-end
+}
+
+#errors{
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(218, 121, 121);
+    text-align: center;
+}
+
+.block_success_image{
+    display: none;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.block_success_image.active{
+    display: block;
+}

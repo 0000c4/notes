@@ -1,0 +1,34 @@
+.addBtn__container{
+    margin-left: 5px;
+    padding: 7px 5px;
+    padding-bottom: 0px;
+    background-color: rgb(238, 243, 249);
+    border-radius: 5px;
+    border: 0px;
+}
+.addBtn{
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    z-index: 3;
+}
+.addBtn::before{
+    content: '';
+    background-color: rgb(110,112,115);
+    position: absolute;
+    width: 90%;
+    height: 2px;
+    transform: rotate(90deg);
+    left: 2px;
+    top: 50%;
+}
+.addBtn span{
+    position: absolute;
+    background-color: rgb(110,112,115);
+    left: 0;
+    width: 100%;
+    height: 2px;
+    top: 9px;
+
+}

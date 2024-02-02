@@ -1,0 +1,27 @@
+.search {
+    color: rgb(80, 81, 82);
+    background-color: var(--main-color);/*var location is index.css*/
+    border: 0px;
+    font-size: 18px;
+}
+
+.search:focus {
+    outline: none;
+}
+
+.search__container {
+    min-height: 24px;
+    padding: 5px 5px;
+    flex-grow: 1;
+    /*background-color: rgb(238, 243, 249);*/
+    background-color: var(--main-color);/*var location is index.css*/
+    border-radius: 5px;
+    border: 0px;
+    display: flex;
+    opacity: 1;
+    transition: 500ms all;
+}
+.disabled{
+    position: absolute;
+    opacity: 0;
+}

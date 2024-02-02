@@ -1,0 +1,9 @@
+.SpanButton{
+    padding: 8px;
+    background-color: var(--main-color);/*var location is index.css*/
+    border-radius: 5px;
+    font-family: 'Roboto';
+    color: rgb(109, 109, 109);
+    font-size: 18px;
+    font-weight: 400;
+}

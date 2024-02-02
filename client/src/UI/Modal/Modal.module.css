@@ -1,0 +1,45 @@
+.Modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    transition: 500ms;
+    opacity: 0;
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ModalContent {
+    padding: 25px;
+    box-sizing: border-box;
+    /*background-color: rgb(238, 243, 249);*/
+    background-color: var(--main-bg-color);
+    /*var location is index.css*/
+    border-radius: 10px;
+    min-width: 250px;
+    transform: scale(0.5);
+    transition: 400ms all;
+    /*box-shadow: 10px 5px 5px rgb(94, 94, 94);*/
+}
+
+.ModalContent.active {
+    transform: scale(1);
+}
+
+.Modal.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+@media (max-width: 940px) {
+    .ModalContent {
+        height: 100%;
+        width: 100%;
+        border-radius: 0px;
+    }
+}

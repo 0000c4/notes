@@ -1,0 +1,43 @@
+.n1{
+    --i:1
+}
+.n2{
+    --i:2
+}
+.n3{
+    --i:3
+}
+.n4{
+    --i:4
+}
+.n5{
+    --i:5
+}
+.n6{
+    --i:6
+}
+.n7{
+    --i:7
+}
+.SyncAnim span{
+    font-size: 19px;
+    color: rgb(126, 126, 126);
+    font-family: 'Roboto';
+}
+.SyncAnim{
+    position: relative;
+}
+.SyncAnim span {
+    position: relative;
+    display: inline-block;
+    animation: flip 1s infinite;
+    animation-delay: calc(.1s * var(--i))
+}
+
+@keyframes flip {
+
+    0%,
+    80% {
+        transform: rotateY(360deg)
+    }
+}

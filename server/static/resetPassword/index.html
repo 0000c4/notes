@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>notes</title>
+    <link rel="stylesheet" href="/static/resetPassword/index.css">
+
+</head>
+
+<body>
+    <main>
+        <div class="block">
+            <h1 class="block_title" id="title">Reset your password</h1>
+            <form method="post" id="resetForm" class="resetForm">
+                <input class="input_password" placeholder="New password" name="password" type="password">
+                <input class="input_password" placeholder="Retry new password" name="retry_password" type="password">
+                <span class="block_attention">
+                    <span>Attention</span>: after resetting the password, all devices will be logged out
+                </span>
+
+                <span id="errors"></span>
+                <button type="submit">submit</button>
+            </form>
+            <img class="block_success_image" id="success_image" src="/static/resetPassword/images/check.svg" alt="" srcset="">
+        </div>
+    </main>
+    <script src="/static/resetPassword/index.js"></script>
+</body>
+
+</html>

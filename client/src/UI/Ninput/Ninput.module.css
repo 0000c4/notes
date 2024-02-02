@@ -1,0 +1,17 @@
+.search {
+    color: rgb(80, 81, 82);
+    border: 0px;
+    font-size: 18px;
+    max-height: 24px;
+    padding: 5px 5px;
+    flex-grow: 1;
+    /*background-color: rgb(223, 228, 239);*/
+    background-color: var(--main-color);/*var location is index.css*/
+    border-radius: 5px;
+    border: 0px;
+    width: 90%;
+}
+
+.search:focus {
+    outline: none;
+}
